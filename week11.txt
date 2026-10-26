@@ -1,0 +1,13 @@
+Step 1: Open VMware Workstation and launch the Kali Linux virtual machine.
+
+Step 2: Open Firefox inside Kali Linux and navigate to GitHub.
+
+Search for the ICs-needs repository by sampagikilai and download malware.rar.
+
+Step 3: Open the Downloads folder using the file manager. Right-click on malware.rar and select "Extract Here" using the archive manager to extract file.exe.
+
+Step 4: Open a new tab in Firefox, go to FileScan.io, and upload the extracted file.exe file from your Downloads folder.
+
+Step 5: Check the detection results on FileScan.io to review threat indicators, sandbox analysis, and the confirmed threat verdict.
+
+Step 6: Open another tab on VirusTotal. Paste the file hash or upload file.exe to check its multi-engine vendor detection score and threat reputation.

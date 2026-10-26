@@ -1,0 +1,15 @@
+cd Desktop
+ls
+cd rsa
+ls
+cat enc.txt
+cat pubkey.pem
+openssl rsa -pubin -inform PEM -text -noout < pubkey.pem
+sudo apt update
+sudo apt install python3-pip
+python3 -m venv crypto-env
+source crypto-env/bin/activate
+pip install pycryptodome
+python3 exploit.py
+openssl pkeyutl -decrypt -in enc.txt -out dec.txt -inkey private.pem
+cat dec.txt

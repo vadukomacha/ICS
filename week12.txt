@@ -1,0 +1,5 @@
+Application Installation: Install and launch the AnyDesk application on both the host computer and the target mobile phone.
+Device Discovery: Open AnyDesk on the mobile device to retrieve its unique IP/AnyDesk address.
+Session Initiation: Enter the mobile device's address into the desktop AnyDesk application and initiate a connection request.
+Access Authorization: Accept the incoming connection prompt and permissions on the mobile device to establish the remote session.
+Security Verification (Screen Blanking/Masking):Navigate to a secure input field or password entry screen on the mobile device while the remote session is active.

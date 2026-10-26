@@ -1,0 +1,35 @@
+cd /
+cd var
+cd www
+cd html
+
+ls
+
+sudo mv dvwa2 DVWA
+sudo chmod -R 777 DVWA
+
+cd DVWA/config
+
+sudo cp config.inc.php.dist config.inc.php
+sudo nano config.inc.php
+
+sudo service mysql start
+
+sudo mysql -u root -p
+
+Inside MariaDB, execute:
+
+SHOW DATABASES;
+EXIT;
+
+Return to the terminal and execute:
+
+sudo service apache2 start
+
+Open Firefox and visit:
+
+http://localhost/DVWA
+
+Or open the login page directly:
+
+http://127.0.0.1/DVWA/login.php

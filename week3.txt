@@ -1,0 +1,35 @@
+STEP-1: Open Terminal
+
+Log in to Kali Linux.
+Open the terminal.
+
+STEP-2: Launch Wireshark
+
+Open it from:
+
+Applications → Sniffing & Spoofing → Wireshark
+
+STEP-3: Select a Network Interface
+
+Wireshark displays available interfaces.
+Select the active interface:
+eth0 (Ethernet)
+Double-click the interface to start packet capturing.
+
+STEP-4: Start Capturing Packets
+
+STEP-5: Generate Network Traffic
+
+STEP-6: Stop Packet Capture
+
+STEP-7: Analyze Captured Packets
+
+STEP-8: Apply Display Filters
+
+STEP-9: Inspect Packet Details
+
+STEP-10: Follow a TCP Stream
+
+STEP-11: Save the Capture
+
+STEP-12: Reopen Saved Capture

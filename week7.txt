@@ -1,0 +1,37 @@
+Step 1: Open Autopsy
+Step 2: Select New Case
+
+Case Information
+
+Case Name: SAI
+Case Type: Single-user / Multi-user
+Click Next.
+Step 3: Optional Information
+Case Number: 07
+Examiner Name: John
+Phone: 123456789
+Email: john@gmail.com
+Click Finish.
+Step 4: Select Host
+Generate a new host name based on the data source name.
+Click Next.
+Step 5: Select Data Source Type
+Select Logical Files.
+Click Next.
+Step 6: Select Data Source
+
+Add the downloaded file from GitHub:
+
+Autopsy-email-Forensics.zip
+Step 7: Configure Ingest
+
+Select the following options:
+
+☑ Keyword Search
+☑ Email Parser
+Step 8: Generate Report (Excel)
+Generate the report in Excel format.
+Click the generated report link.
+Output
+
+Excel Sheet
