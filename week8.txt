@@ -1,0 +1,15 @@
+Step-1: Connect cables and power source to the wifi router and system device.
+
+Step-2: Using web browser enter router ip address (192.168.0.1).
+
+Step-3: In network map option which contain internet Archer C6, mesh device, internet IP address and LAN MAC address.
+
+Step-4: In internet option choose 'Dynamic IP' under internet Connection Type and "use default MAC address" under Router MAC address.
+
+Step-5: In wireless option enable either Smart Connect, 2.4GHz or 5GHz.
+-> Choose network name (SSID) as "ICS-LAB"
+-> Enter password [Eg: 123456789]
+-> Choose security as WPA2-PSK [AES] and click save
+
+Step-6: In advanced option click Security access Control, enable access control.
+In access mode enable allow list and add device, if any suspicious device found enable Deny list.
