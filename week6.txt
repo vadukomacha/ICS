@@ -1,0 +1,18 @@
+[Initial Setup]
+Kali: sudo service apache2 start
+Kali: sudo service mysql start
+Kali: ifconfig
+Windows: ipconfig
+
+[Task 1: Block & Unblock Ping]
+Windows: ping <kali_ip>
+Kali: sudo iptables -A INPUT -s <windows_ip> -j DROP
+Windows: ping <kali_ip>
+Kali: sudo iptables -D INPUT -s <windows_ip> -j DROP
+Windows: ping <kali_ip>
+
+[Task 2: Block & Unblock Port 80]
+Kali: sudo iptables -A INPUT -s <windows_ip> -p tcp --destination-port 80 -j DROP
+Windows: (Open browser to <kali_ip> to verify block)
+Kali: sudo iptables -D INPUT -s <windows_ip> -p tcp --destination-port 80 -j DROP
+Windows: (Refresh browser to <kali_ip> to verify unblock)
