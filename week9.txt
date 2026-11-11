@@ -1,0 +1,47 @@
+Application installation:
+Install and launch the any desk application on both the host and target mobile.
+
+Device history:
+Open any desk on the mobile device to retrieve its unique IP any desk address.
+
+Session initiation:
+Enter the mobile device's address into the desktop any desk application and initiate a connection request.
+
+Access Authorization:
+Accept the incoming connection prompt and permission on the mobile device to establish the remote session.
+
+Security Verification:
+Navigate the secure input field (or) password entry screen on the mobile device while the remote session is active.
+
+Step-1: Download CMROS zip and extract zip file.
+
+Step-2: Open vmware.
+
+Step-3: Open virtual machine and click CMROS extracted folder select the .ovf file.
+
+Step-4: Power on the CMROS virtual machine and consider IP address of CMROS.
+
+Step-5: Open link of linux and open terminal open nmap tool and give the IP address of the CMROS It shows only http service only in the nmap tool.
+Now open again nmap tool and set intense scan all TCP ports. Now it displays all ports like http and ssh. Now open cat, linux browser and search 192.168.232.128 (CMROS IP address)
+
+Right click -> view page source
+-> It displays the source code
+-> After scrolling down the source code page there we can find username and pswd
+-> Go to Kali linux terminal and use the below command.
+-> Use the password we got from the view page source code which is text use ls command.
+-> Use who am I to find the user.
+-> To know the suspicious file redirect to desktop and use ls command.
+-> Now go to windows system, open browser and download winscp.
+
+
+-> Go to desktop
+-> Open Kali linux and search for wireshark tool.
+-> Open wireshark tool in Kali
+-> It displays user credentials
+-> Now copy password and open using above credentials
+-> Using the above credentials we can create CMROS sys
+-> Now we use ls command.
+   root @ vulnos: ~# ls
+   Desktop tazinst: conf
+   root @ vulnos: ~# cd Desktop
+   root @ vulnos: ~/Desktop # ls
